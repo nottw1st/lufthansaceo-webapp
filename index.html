@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Füße">
+
+    <title>Sample</title>
+
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="manifest.webmanifest">
+
+    <style>
+        :root {
+            --orange-top: #FFFFFF;
+            --orange-mid: #FFFFFF;
+            --orange-bottom: #FFFFFF;
+            --white: #FFFFFF;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            overflow: hidden;
+            display: grid;
+            place-items: center;
+            background:
+                radial-gradient(circle at 50% 30%, rgba(255, 168, 0, 0.18), transparent 38%),
+                linear-gradient(145deg, var(--orange-top) 0%, var(--orange-mid) 48%, var(--orange-bottom) 100%);
+            color: var(--white);
+            font-family:
+                "SF Pro Display",
+                "SF Pro Text",
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Helvetica,
+                Arial,
+                sans-serif;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+        }
+    </style>
+</head>
+<body>
+    <main class="loader-screen" aria-label="Ladevorgang">
+        <div class="loader" aria-hidden="true">
+        </div>
+        <p class="loading-text">Bitte warten</p>
+    </main>
+</body>
+</html>
